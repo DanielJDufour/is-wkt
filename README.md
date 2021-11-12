@@ -4,6 +4,11 @@ Small Library to Check if a String is Probably [Well-Known Text](https://en.wiki
 # background
 Most of the algorithm and the code is taken from the [testWKT](https://github.com/proj4js/proj4js/blob/315398ea924c3169a257e3cf9796bc3d120039ee/lib/parseCode.js#L12) function in [proj4js](https://github.com/proj4js/proj4js) whose license is found [here](https://github.com/proj4js/proj4js/blob/master/LICENSE.md).
 
+# install
+```bash
+npm install is-wkt
+```
+
 # usage
 ```js
 import isWKT from "is-wkt";
