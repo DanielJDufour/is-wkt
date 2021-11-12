@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Small Function to Check if a String is Probably Well-Known Text",
   "main": "is-wkt.js",
+  "files": [
+    "is-wkt.js"
+  ],
   "scripts": {
     "format": "npx prettier --arrow-parens=avoid --trailing-comma=none --write *.js",
     "test": "node test.js"
