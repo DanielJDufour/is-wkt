@@ -29,6 +29,15 @@ function isWKT(str) {
   }
 }
 
-if (typeof module === "object") module.exports = isWKT;
+if (typeof define === "function" && define.amd) {
+  define(function () {
+    return isWKT;
+  });
+}
+
+if (typeof module === "object") {
+  module.exports = isWKT;
+  module.exports.default = isWKT;
+}
 if (typeof self === "object") self.isWKT = isWKT;
 if (typeof window === "object") window.isWKT = isWKT;

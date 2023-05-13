@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/DanielJDufour/is-wkt#readme",
   "devDependencies": {
-    "flug": "^2.1.1"
+    "flug": "^2.6.0"
   }
 }
