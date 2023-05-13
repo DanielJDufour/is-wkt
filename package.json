@@ -1,6 +1,6 @@
 {
   "name": "is-wkt",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Small Function to Check if a String is Probably Well-Known Text",
   "main": "is-wkt.js",
   "files": [
