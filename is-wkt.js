@@ -10,17 +10,24 @@ const keywords = [
   "GEODETICCRS",
   "GEODETICDATUM",
   "ENGCRS",
-  "ENGINEERINGCRS"
+  "ENGINEERINGCRS",
+  "PRIMEM",
+  "DATUM"
 ];
 
 function isWKT(str) {
   // clean any blank spaces in beginning
   str = str.trim();
 
-  if (str.startsWith("PROJCS[") || str.startsWith("GEOGCS[")) {
+  if (
+    str.startsWith("PROJCS[") ||
+    str.startsWith("PROJCRS[") ||
+    str.startsWith("GEOGCS[") ||
+    str.startsWith("GEOGCRS[")
+  ) {
     for (let i = 0; i < keywords.length; i++) {
       const kw = keywords[i];
-      if (str.indexOf(kw) !== -1) {
+      if (str.includes(kw + "[")) {
         return true;
       }
     }
